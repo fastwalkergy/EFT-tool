@@ -23,7 +23,6 @@ D:\1212\EFT-tool\EFT-tool\bin\Release\AntdUI.dll
 D:\1212\EFT-tool\EFT-tool\bin\Release\AntdUI.xml
 D:\Github\EFT-tool\EFT-tool\bin\Release\EFT-tool.exe.config
 D:\Github\EFT-tool\EFT-tool\bin\Release\EFT-tool.exe
-D:\Github\EFT-tool\EFT-tool\bin\Release\EFT-tool.pdb
 D:\Github\EFT-tool\EFT-tool\bin\Release\zh-Hans\EFT-tool.resources.dll
 D:\Github\EFT-tool\EFT-tool\bin\Release\AntdUI.dll
 D:\Github\EFT-tool\EFT-tool\bin\Release\Microsoft.WindowsAPICodePack.dll
@@ -43,4 +42,3 @@ D:\Github\EFT-tool\EFT-tool\obj\Release\EFT-tool.csproj.CoreCompileInputs.cache
 D:\Github\EFT-tool\EFT-tool\obj\Release\zh-Hans\EFT-tool.resources.dll
 D:\Github\EFT-tool\EFT-tool\obj\Release\EFT-tool.csproj.Up2Date
 D:\Github\EFT-tool\EFT-tool\obj\Release\EFT-tool.exe
-D:\Github\EFT-tool\EFT-tool\obj\Release\EFT-tool.pdb

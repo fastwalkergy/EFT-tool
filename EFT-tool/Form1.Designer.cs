@@ -33,6 +33,7 @@
             this.addreg = new AntdUI.Button();
             this.delgenuinebutton = new AntdUI.Button();
             this.settingbutton = new AntdUI.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // version
@@ -75,15 +76,24 @@
             this.settingbutton.Radius = 2;
             this.settingbutton.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Name = "label1";
+            // 
             // main
             // 
             this.BackgroundImage = global::EFT_tool.Properties.Resources.tkf_l3r5vq_1280x720;
             resources.ApplyResources(this, "$this");
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.settingbutton);
             this.Controls.Add(this.delgenuinebutton);
             this.Controls.Add(this.addreg);
             this.Controls.Add(this.version);
             this.ForeColor = System.Drawing.Color.White;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "main";
             this.ResumeLayout(false);
@@ -96,6 +106,7 @@
         private AntdUI.Button addreg;
         private AntdUI.Button delgenuinebutton;
         private AntdUI.Button settingbutton;
+        private System.Windows.Forms.Label label1;
     }
 }
 

@@ -30,6 +30,7 @@
         {
             this.delgenuinebutton = new AntdUI.Button();
             this.input1 = new AntdUI.Input();
+            this.label1 = new AntdUI.Label();
             this.SuspendLayout();
             // 
             // delgenuinebutton
@@ -59,12 +60,23 @@
             this.input1.Size = new System.Drawing.Size(298, 276);
             this.input1.TabIndex = 5;
             // 
+            // label1
+            // 
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label1.Location = new System.Drawing.Point(14, 323);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(298, 47);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "如果你知道自己在做什么再使用本功能！！";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // delgenuine
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(324, 346);
+            this.ClientSize = new System.Drawing.Size(324, 373);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.input1);
             this.Controls.Add(this.delgenuinebutton);
             this.MaximizeBox = false;
@@ -77,5 +89,6 @@
         #endregion
         private AntdUI.Button delgenuinebutton;
         private AntdUI.Input input1;
+        private AntdUI.Label label1;
     }
 }

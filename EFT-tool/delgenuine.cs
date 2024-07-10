@@ -27,7 +27,7 @@ namespace EFT_tool
                     string selectedFolderPathKey = key.GetValue("selectedFolderPath") as string;
                     if (selectedFolderPathKey != null)
                     {
-                        pathParameter = selectedFolderPathKey;
+                        pathParameter = selectedFolderPathKey + @"\Install_EFT";
                     }
                 };
             }
@@ -61,44 +61,33 @@ namespace EFT_tool
                             if (key.GetValue("InstallLocation") as string != null)
                             {
                                 key.DeleteValue("InstallLocation");
+                                PrintToTextBox("删除InstallLocation注册表成功");
                             }
-
-                        }
-
-                        // 添加一个名为 "Version" 的字符串值
-                        key.SetValue("InstallLocation", pathParameter);
-                        /*
-                        key.SetValue("InstallLocation", pathParameter);
-                        key.SetValue("InstallLocation", pathParameter);
-                        PrintToTextBox("正在添加InstallLocation注册表");
-                        PrintToTextBox("正在添加InstallLocation注册表");
-                        */
-                        PrintToTextBox("正在添加InstallLocation注册表");
-                        string InstallLocation = key.GetValue("InstallLocation") as string;
-                        if (InstallLocation == null)
-                        {
-                            PrintToTextBox("添加InstallLocation注册表失败！");
-                        }
-                        else
-                        {
-                            PrintToTextBox("注册表全部添加成功");
+                            if (key.GetValue("Launcher") as string != null)
+                            {
+                                key.DeleteValue("Launcher");
+                                PrintToTextBox("删除Launcher注册表成功");
+                            }
+                            if (key.GetValue("UninstallString") as string != null)
+                            {
+                                key.DeleteValue("UninstallString");
+                                PrintToTextBox("删除UninstallString注册表成功");
+                            }
                         }
                     }
-                    //开始创建文件夹
-                    PrintToTextBox("开始创建EFT文件夹");
                     if (Directory.Exists(pathParameter))
                     {
-                        PrintToTextBox("文件夹已存在，跳过创建");
+                        try
+                        {
+                            Directory.Delete(pathParameter, true);
+                            PrintToTextBox("删除EFT验证目录成功");
+                        }
+                        catch (IOException ex)
+                        {
+                            Console.WriteLine($"删除文件夹时出错: {ex.Message}");
+                        }
                     }
-                    else
-                    {
-                        Directory.CreateDirectory(pathParameter);
-                        PrintToTextBox("正在创建EFT文件夹");
-                    }
-                    //开始创建文件
-                    PrintToTextBox("开始创建文件：");
-                    PrintToTextBox("正版验证已完成，Enjoy！");
-                    MessageBox.Show($"正版验证已完成！", "成功");
+                    PrintToTextBox("删除已完成");
                 });
             }
             else
