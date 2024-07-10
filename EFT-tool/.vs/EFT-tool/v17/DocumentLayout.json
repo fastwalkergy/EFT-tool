@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\1212\\EFT-tool\\EFT-tool\\",
+  "WorkspaceRootPath": "D:\\Github\\EFT-tool\\EFT-tool\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BAD45464-B89B-4CD5-B42C-F4CD6B2BF68D}|EFT-tool.csproj|d:\\1212\\eft-tool\\eft-tool\\delgenuine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BAD45464-B89B-4CD5-B42C-F4CD6B2BF68D}|EFT-tool.csproj|d:\\github\\eft-tool\\eft-tool\\delgenuine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BAD45464-B89B-4CD5-B42C-F4CD6B2BF68D}|EFT-tool.csproj|solutionrelative:delgenuine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BAD45464-B89B-4CD5-B42C-F4CD6B2BF68D}|EFT-tool.csproj|d:\\1212\\eft-tool\\eft-tool\\delgenuine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BAD45464-B89B-4CD5-B42C-F4CD6B2BF68D}|EFT-tool.csproj|solutionrelative:delgenuine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BAD45464-B89B-4CD5-B42C-F4CD6B2BF68D}|EFT-tool.csproj|d:\\github\\eft-tool\\eft-tool\\genuine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD45464-B89B-4CD5-B42C-F4CD6B2BF68D}|EFT-tool.csproj|solutionrelative:genuine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,26 +24,27 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "delgenuine.cs",
-              "DocumentMoniker": "D:\\1212\\EFT-tool\\EFT-tool\\delgenuine.cs",
+              "DocumentMoniker": "D:\\Github\\EFT-tool\\EFT-tool\\delgenuine.cs",
               "RelativeDocumentMoniker": "delgenuine.cs",
-              "ToolTip": "D:\\1212\\EFT-tool\\EFT-tool\\delgenuine.cs",
+              "ToolTip": "D:\\Github\\EFT-tool\\EFT-tool\\delgenuine.cs",
               "RelativeToolTip": "delgenuine.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAADEAAAAAAAAAAAAkwDwAAABJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T06:24:06.196Z",
+              "WhenOpened": "2024-07-10T07:55:44.808Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "delgenuine.cs [\u8BBE\u8BA1]",
-              "DocumentMoniker": "D:\\1212\\EFT-tool\\EFT-tool\\delgenuine.cs",
-              "RelativeDocumentMoniker": "delgenuine.cs",
-              "ToolTip": "D:\\1212\\EFT-tool\\EFT-tool\\delgenuine.cs [\u8BBE\u8BA1]",
-              "RelativeToolTip": "delgenuine.cs [\u8BBE\u8BA1]",
+              "Title": "genuine.cs",
+              "DocumentMoniker": "D:\\Github\\EFT-tool\\EFT-tool\\genuine.cs",
+              "RelativeDocumentMoniker": "genuine.cs",
+              "ToolTip": "D:\\Github\\EFT-tool\\EFT-tool\\genuine.cs",
+              "RelativeToolTip": "genuine.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAIwDIAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T06:21:46.567Z",
-              "EditorCaption": " [\u8BBE\u8BA1]"
+              "WhenOpened": "2024-07-10T07:51:44.923Z",
+              "EditorCaption": ""
             }
           ]
         }

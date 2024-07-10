@@ -36,19 +36,19 @@ namespace EFT_tool
         private void PrintToTextBox(string text)
         {
             // 检查是否需要在主线程上执行更新
-            if (textBoxOutput.InvokeRequired)
+            if (input1.InvokeRequired)
             {
                 // 使用 Invoke 方法在主线程上执行更新
-                textBoxOutput.Invoke(new Action<string>(PrintToTextBox), text);
+                input1.Invoke(new Action<string>(PrintToTextBox), text);
             }
             else
             {
                 // 在 TextBox 中追加新的文本
-                this.textBoxOutput.AppendText(text + Environment.NewLine);
+                this.input1.AppendText(text + Environment.NewLine);
             }
         }
 
-        private async void startgenuine_Click(object sender, EventArgs e)
+        private async void startdelgenuinebutton_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(pathParameter))
             {
@@ -98,8 +98,6 @@ namespace EFT_tool
             {
                 MessageBox.Show($"请先选择过验证路径", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            
         }
-
     }
 }

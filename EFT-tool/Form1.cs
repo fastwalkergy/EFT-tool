@@ -20,14 +20,11 @@ namespace EFT_tool
         public main()
         {
             InitializeComponent();
+            AntdUI.Config.IsDark = true;
             Version version = Assembly.GetExecutingAssembly().GetName().Version;
             this.version.Text = $"Version: {version}";
         }
 
-        private void addreg_Click(object sender, EventArgs e)
-        {
-            genuine genuine = new genuine();
-            genuine.ShowDialog();
             /*
             try
             {
@@ -44,19 +41,24 @@ namespace EFT_tool
             {
                 MessageBox.Show($"Error: {ex.Message}", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }*/
-        }
 
-        private void setting_Click(object sender, EventArgs e)
+
+        private void addreg_Click_1(object sender, EventArgs e)
         {
-            setting setting = new setting();
-            setting.ShowDialog();
-
+            genuine genuine = new genuine();
+            genuine.ShowDialog();
         }
 
-        private void delgenuinebutton_Click(object sender, EventArgs e)
+        private void delgenuinebutton_Click_1(object sender, EventArgs e)
         {
             delgenuine delgenuine = new delgenuine();
             delgenuine.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            setting setting = new setting();
+            setting.ShowDialog();
         }
     }
 }

@@ -29,43 +29,53 @@
         private void InitializeComponent()
         {
             this.delgenuinebutton = new AntdUI.Button();
-            this.textBoxOutput = new System.Windows.Forms.TextBox();
+            this.input1 = new AntdUI.Input();
             this.SuspendLayout();
             // 
             // delgenuinebutton
             // 
+            this.delgenuinebutton.BorderWidth = 1F;
+            this.delgenuinebutton.DefaultBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.delgenuinebutton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.delgenuinebutton.Ghost = true;
             this.delgenuinebutton.Location = new System.Drawing.Point(119, 3);
             this.delgenuinebutton.Name = "delgenuinebutton";
+            this.delgenuinebutton.Radius = 2;
             this.delgenuinebutton.Size = new System.Drawing.Size(91, 32);
             this.delgenuinebutton.TabIndex = 4;
             this.delgenuinebutton.Text = "删除正版验证";
+            this.delgenuinebutton.Click += new System.EventHandler(this.delgenuinebutton_Click);
             // 
-            // textBoxOutput
+            // input1
             // 
-            this.textBoxOutput.Location = new System.Drawing.Point(12, 41);
-            this.textBoxOutput.Multiline = true;
-            this.textBoxOutput.Name = "textBoxOutput";
-            this.textBoxOutput.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxOutput.Size = new System.Drawing.Size(300, 324);
-            this.textBoxOutput.TabIndex = 3;
+            this.input1.AutoScroll = true;
+            this.input1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.input1.BorderActive = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(213)))), ((int)(((byte)(237)))));
+            this.input1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(200)))), ((int)(((byte)(241)))));
+            this.input1.Location = new System.Drawing.Point(14, 41);
+            this.input1.Multiline = true;
+            this.input1.Name = "input1";
+            this.input1.ReadOnly = true;
+            this.input1.Size = new System.Drawing.Size(298, 276);
+            this.input1.TabIndex = 5;
             // 
             // delgenuine
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(324, 377);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ClientSize = new System.Drawing.Size(324, 346);
+            this.Controls.Add(this.input1);
             this.Controls.Add(this.delgenuinebutton);
-            this.Controls.Add(this.textBoxOutput);
             this.MaximizeBox = false;
             this.Name = "delgenuine";
-            this.Text = "delgenuine";
+            this.Text = "删除正版验证";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
         private AntdUI.Button delgenuinebutton;
-        private System.Windows.Forms.TextBox textBoxOutput;
+        private AntdUI.Input input1;
     }
 }

@@ -29,25 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main));
-            this.addreg = new System.Windows.Forms.Button();
-            this.setting = new System.Windows.Forms.Button();
             this.version = new System.Windows.Forms.Label();
-            this.delgenuinebutton = new System.Windows.Forms.Button();
+            this.addreg = new AntdUI.Button();
+            this.delgenuinebutton = new AntdUI.Button();
+            this.settingbutton = new AntdUI.Button();
             this.SuspendLayout();
-            // 
-            // addreg
-            // 
-            resources.ApplyResources(this.addreg, "addreg");
-            this.addreg.Name = "addreg";
-            this.addreg.UseVisualStyleBackColor = true;
-            this.addreg.Click += new System.EventHandler(this.addreg_Click);
-            // 
-            // setting
-            // 
-            resources.ApplyResources(this.setting, "setting");
-            this.setting.Name = "setting";
-            this.setting.UseVisualStyleBackColor = true;
-            this.setting.Click += new System.EventHandler(this.setting_Click);
             // 
             // version
             // 
@@ -56,22 +42,48 @@
             this.version.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.version.Name = "version";
             // 
+            // addreg
+            // 
+            this.addreg.BorderWidth = 1F;
+            this.addreg.DefaultBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(178)))), ((int)(((byte)(178)))));
+            this.addreg.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(96)))));
+            this.addreg.Ghost = true;
+            resources.ApplyResources(this.addreg, "addreg");
+            this.addreg.Name = "addreg";
+            this.addreg.Radius = 2;
+            this.addreg.Click += new System.EventHandler(this.addreg_Click_1);
+            // 
             // delgenuinebutton
             // 
+            this.delgenuinebutton.BorderWidth = 1F;
+            this.delgenuinebutton.DefaultBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
+            this.delgenuinebutton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(0)))), ((int)(((byte)(41)))));
+            this.delgenuinebutton.Ghost = true;
             resources.ApplyResources(this.delgenuinebutton, "delgenuinebutton");
             this.delgenuinebutton.Name = "delgenuinebutton";
-            this.delgenuinebutton.UseVisualStyleBackColor = true;
-            this.delgenuinebutton.Click += new System.EventHandler(this.delgenuinebutton_Click);
+            this.delgenuinebutton.Radius = 2;
+            this.delgenuinebutton.Click += new System.EventHandler(this.delgenuinebutton_Click_1);
+            // 
+            // settingbutton
+            // 
+            this.settingbutton.BorderWidth = 1F;
+            this.settingbutton.DefaultBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(178)))), ((int)(((byte)(178)))));
+            this.settingbutton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(96)))));
+            this.settingbutton.Ghost = true;
+            resources.ApplyResources(this.settingbutton, "settingbutton");
+            this.settingbutton.Name = "settingbutton";
+            this.settingbutton.Radius = 2;
+            this.settingbutton.Click += new System.EventHandler(this.button1_Click);
             // 
             // main
             // 
             this.BackgroundImage = global::EFT_tool.Properties.Resources.tkf_l3r5vq_1280x720;
             resources.ApplyResources(this, "$this");
+            this.Controls.Add(this.settingbutton);
             this.Controls.Add(this.delgenuinebutton);
-            this.Controls.Add(this.version);
-            this.Controls.Add(this.setting);
             this.Controls.Add(this.addreg);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Controls.Add(this.version);
+            this.ForeColor = System.Drawing.Color.White;
             this.MaximizeBox = false;
             this.Name = "main";
             this.ResumeLayout(false);
@@ -80,11 +92,10 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button addreg;
-        private System.Windows.Forms.Button setting;
         private System.Windows.Forms.Label version;
-        private System.Windows.Forms.Button delgenuinebutton;
+        private AntdUI.Button addreg;
+        private AntdUI.Button delgenuinebutton;
+        private AntdUI.Button settingbutton;
     }
 }
 

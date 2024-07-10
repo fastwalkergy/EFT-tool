@@ -28,47 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBoxOutput = new System.Windows.Forms.TextBox();
-            this.startgenuinebutton = new System.Windows.Forms.Button();
+            this.input1 = new AntdUI.Input();
+            this.startdelgenuinebutton = new AntdUI.Button();
             this.SuspendLayout();
             // 
-            // textBoxOutput
+            // input1
             // 
-            this.textBoxOutput.Location = new System.Drawing.Point(12, 41);
-            this.textBoxOutput.Multiline = true;
-            this.textBoxOutput.Name = "textBoxOutput";
-            this.textBoxOutput.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxOutput.Size = new System.Drawing.Size(300, 324);
-            this.textBoxOutput.TabIndex = 0;
+            this.input1.AutoScroll = true;
+            this.input1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.input1.BorderActive = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(213)))), ((int)(((byte)(237)))));
+            this.input1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(200)))), ((int)(((byte)(241)))));
+            this.input1.Location = new System.Drawing.Point(14, 39);
+            this.input1.Multiline = true;
+            this.input1.Name = "input1";
+            this.input1.ReadOnly = true;
+            this.input1.Size = new System.Drawing.Size(298, 276);
+            this.input1.TabIndex = 6;
             // 
-            // startgenuinebutton
+            // startdelgenuinebutton
             // 
-            this.startgenuinebutton.Location = new System.Drawing.Point(129, 12);
-            this.startgenuinebutton.Name = "startgenuinebutton";
-            this.startgenuinebutton.Size = new System.Drawing.Size(75, 23);
-            this.startgenuinebutton.TabIndex = 1;
-            this.startgenuinebutton.Text = "开始过验证";
-            this.startgenuinebutton.UseVisualStyleBackColor = true;
-            this.startgenuinebutton.Click += new System.EventHandler(this.startgenuine_Click);
+            this.startdelgenuinebutton.BorderWidth = 1F;
+            this.startdelgenuinebutton.DefaultBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.startdelgenuinebutton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.startdelgenuinebutton.Ghost = true;
+            this.startdelgenuinebutton.Location = new System.Drawing.Point(103, 1);
+            this.startdelgenuinebutton.Name = "startdelgenuinebutton";
+            this.startdelgenuinebutton.Radius = 2;
+            this.startdelgenuinebutton.Size = new System.Drawing.Size(119, 32);
+            this.startdelgenuinebutton.TabIndex = 7;
+            this.startdelgenuinebutton.Text = "开始过正版验证";
+            this.startdelgenuinebutton.Click += new System.EventHandler(this.startdelgenuinebutton_Click);
             // 
             // genuine
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(324, 377);
-            this.Controls.Add(this.startgenuinebutton);
-            this.Controls.Add(this.textBoxOutput);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(324, 346);
+            this.Controls.Add(this.startdelgenuinebutton);
+            this.Controls.Add(this.input1);
+            this.ForeColor = System.Drawing.Color.White;
             this.MaximizeBox = false;
             this.Name = "genuine";
             this.Text = "过正版验证";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBoxOutput;
-        private System.Windows.Forms.Button startgenuinebutton;
+        private AntdUI.Input input1;
+        private AntdUI.Button startdelgenuinebutton;
     }
 }

@@ -117,59 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="addreg.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 54</value>
-  </data>
-  <data name="addreg.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 56</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="addreg.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="addreg.Text" xml:space="preserve">
-    <value>过正版验证</value>
-  </data>
-  <data name="&gt;&gt;addreg.Name" xml:space="preserve">
-    <value>addreg</value>
-  </data>
-  <data name="&gt;&gt;addreg.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;addreg.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;addreg.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="setting.Location" type="System.Drawing.Point, System.Drawing">
-    <value>526, 361</value>
-  </data>
-  <data name="setting.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="setting.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="setting.Text" xml:space="preserve">
-    <value>设置</value>
-  </data>
-  <data name="&gt;&gt;setting.Name" xml:space="preserve">
-    <value>setting</value>
-  </data>
-  <data name="&gt;&gt;setting.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;setting.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;setting.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="version.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="version.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 349</value>
   </data>
@@ -192,20 +144,40 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;version.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="delgenuinebutton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="addreg.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 291</value>
+  </data>
+  <data name="addreg.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 51</value>
+  </data>
+  <data name="addreg.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="addreg.Text" xml:space="preserve">
+    <value>过正版验证</value>
+  </data>
+  <data name="&gt;&gt;addreg.Name" xml:space="preserve">
+    <value>addreg</value>
+  </data>
+  <data name="&gt;&gt;addreg.Type" xml:space="preserve">
+    <value>AntdUI.Button, AntdUI, Version=1.4.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;addreg.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;addreg.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="delgenuinebutton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 116</value>
+    <value>484, 291</value>
   </data>
   <data name="delgenuinebutton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 56</value>
+    <value>117, 51</value>
   </data>
   <data name="delgenuinebutton.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+    <value>6</value>
   </data>
   <data name="delgenuinebutton.Text" xml:space="preserve">
     <value>删除正版验证</value>
@@ -214,17 +186,42 @@
     <value>delgenuinebutton</value>
   </data>
   <data name="&gt;&gt;delgenuinebutton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>AntdUI.Button, AntdUI, Version=1.4.3.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;delgenuinebutton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;delgenuinebutton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="settingbutton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>525, 350</value>
+  </data>
+  <data name="settingbutton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 34</value>
+  </data>
+  <data name="settingbutton.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="settingbutton.Text" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="&gt;&gt;settingbutton.Name" xml:space="preserve">
+    <value>settingbutton</value>
+  </data>
+  <data name="&gt;&gt;settingbutton.Type" xml:space="preserve">
+    <value>AntdUI.Button, AntdUI, Version=1.4.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;settingbutton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;settingbutton.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
@@ -946,7 +943,7 @@
 </value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>EFT-tool</value>
+    <value>MAIN</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>main</value>
