@@ -42,3 +42,13 @@ D:\Github\EFT-tool\EFT-tool\obj\Release\EFT-tool.csproj.CoreCompileInputs.cache
 D:\Github\EFT-tool\EFT-tool\obj\Release\zh-Hans\EFT-tool.resources.dll
 D:\Github\EFT-tool\EFT-tool\obj\Release\EFT-tool.csproj.Up2Date
 D:\Github\EFT-tool\EFT-tool\obj\Release\EFT-tool.exe
+D:\Github\EFT-tool\EFT-tool\bin\Release\runtimes\win-x86\native\WebView2Loader.dll
+D:\Github\EFT-tool\EFT-tool\bin\Release\runtimes\win-x64\native\WebView2Loader.dll
+D:\Github\EFT-tool\EFT-tool\bin\Release\runtimes\win-arm64\native\WebView2Loader.dll
+D:\Github\EFT-tool\EFT-tool\bin\Release\Microsoft.Web.WebView2.Core.dll
+D:\Github\EFT-tool\EFT-tool\bin\Release\Microsoft.Web.WebView2.WinForms.dll
+D:\Github\EFT-tool\EFT-tool\bin\Release\Microsoft.Web.WebView2.Wpf.dll
+D:\Github\EFT-tool\EFT-tool\bin\Release\Microsoft.Web.WebView2.Core.xml
+D:\Github\EFT-tool\EFT-tool\bin\Release\Microsoft.Web.WebView2.WinForms.xml
+D:\Github\EFT-tool\EFT-tool\bin\Release\Microsoft.Web.WebView2.Wpf.xml
+D:\Github\EFT-tool\EFT-tool\bin\Release\DevExpress.Utils.v13.1.dll

@@ -59,7 +59,9 @@
             this.ClientSize = new System.Drawing.Size(412, 247);
             this.Controls.Add(this.pathtxt);
             this.Controls.Add(this.pathbutton);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "setting";
             this.Text = "setting";
             this.ResumeLayout(false);

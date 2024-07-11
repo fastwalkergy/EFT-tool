@@ -69,6 +69,7 @@
             this.ForeColor = System.Drawing.Color.White;
             this.MaximizeBox = false;
             this.Name = "genuine";
+            this.ShowIcon = false;
             this.Text = "过正版验证";
             this.ResumeLayout(false);
 

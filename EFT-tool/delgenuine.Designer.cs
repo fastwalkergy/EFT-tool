@@ -81,6 +81,7 @@
             this.Controls.Add(this.delgenuinebutton);
             this.MaximizeBox = false;
             this.Name = "delgenuine";
+            this.ShowIcon = false;
             this.Text = "删除正版验证";
             this.ResumeLayout(false);
 
