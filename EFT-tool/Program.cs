@@ -24,18 +24,10 @@ namespace EFT_tool
             }
             // 在程序结束时，释放互斥体
             mutex.ReleaseMutex();
+            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
-            // 创建主窗口
-            main mainWindow = new main();
-
-            // 启动应用程序的消息循环
-            Application.Run(mainWindow);
-            /*
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new main());*/
+            Application.Run(new main());
         }
     }
 }
