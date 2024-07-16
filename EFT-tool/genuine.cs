@@ -18,6 +18,7 @@ namespace EFT_tool
     public partial class genuine : Form
     {
         private static int regok = 0;
+        private static int folderok = 0;
         private static int fileok = 0;
         private static string pathParameter = ""; // path路径初始为空字符串
         string keyName = "SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\EscapeFromTarkov";
@@ -60,7 +61,12 @@ namespace EFT_tool
             fs.Close();
             if (File.Exists(filePath))
             {
-               input1.AppendText($"创建{name}文件成功" + Environment.NewLine); 
+               input1.AppendText($"创建{name}文件成功" + Environment.NewLine);
+            }
+            else
+            {
+                fileok = 0;
+                input1.AppendText($"创建{name}失败" + Environment.NewLine);
             }
         }
 
@@ -81,26 +87,31 @@ namespace EFT_tool
                         key.SetValue("Launcher", pathParameter + @"\EscapeFromTarkov.exe");
                         key.SetValue("UninstallString", pathParameter + @"Uninstall.exe");
                         PrintToTextBox("正在添加InstallLocation注册表");
+                        PrintToTextBox("正在添加Launcher注册表");
+                        PrintToTextBox("正在添加UninstallString注册表");
                         //string InstallLocation = key.GetValue("InstallLocation") as string;
-                        if (key.GetValue("InstallLocation") as string != null)
+                        if (key.GetValue("InstallLocation") as string == null)
                         {
-                            PrintToTextBox("添加Launcher注册表");
-                        }else if (key.GetValue("Launcher") as string != null) 
+                            regok = 0;
+                            PrintToTextBox("添加Launcher注册表失败");
+                        }else if (key.GetValue("Launcher") as string == null)
                         {
-                            PrintToTextBox("添加Launcher注册表");
-                        }else if (key.GetValue("UninstallString") as string != null)
+                            regok = 0;
+                            PrintToTextBox("添加Launcher注册表失败");
+                        }else if (key.GetValue("UninstallString") as string == null)
                         {
-                            PrintToTextBox("添加UninstallString注册表");
+                            regok = 0;
+                            PrintToTextBox("添加UninstallString注册表失败");
                         }
                         else
                         {
-                            regok = 0;
-                            PrintToTextBox("注册表添加失败，请检查！！");
+                            PrintToTextBox("添加InstallLocation注册表成功 \n添加Launcher注册表成功 \n添加UninstallString注册表成功");
                         }
                     }
                     //开始创建文件夹
                     PrintToTextBox("开始创建文件夹：");
-                    PrintToTextBox("正在创建EFT文件夹");
+                    folderok = 1;
+                    PrintToTextBox("开始创建EFT验证文件夹");
                     if (Directory.Exists(pathParameter))
                     {
                         PrintToTextBox("EFT验证文件夹已存在，跳过创建");
@@ -109,8 +120,17 @@ namespace EFT_tool
                     {
                         Directory.CreateDirectory(pathParameter);
                         PrintToTextBox("正在创建EFT验证文件夹");
+                        if (Directory.Exists(pathParameter))
+                        {
+                            PrintToTextBox("创建EFT验证文件夹成功");
+                        }
+                        else
+                        {
+                            folderok = 0;
+                            PrintToTextBox("创建EFT验证文件夹失败");
+                        }
                     }
-                    PrintToTextBox("正在创建BattlEye文件夹");
+                    PrintToTextBox("开始创建BattlEye文件夹");
                     if (Directory.Exists(pathParameter + @"\BattlEye"))
                     {
                         PrintToTextBox("BattlEye文件夹已存在，跳过创建");
@@ -119,8 +139,18 @@ namespace EFT_tool
                     {
                         Directory.CreateDirectory(pathParameter + @"\BattlEye");
                         PrintToTextBox("正在创建BattlEye文件夹");
+                        if (Directory.Exists(pathParameter))
+                        {
+                            PrintToTextBox("创建BattlEye文件夹成功");
+                        }
+                        else
+                        {
+                            folderok = 0;
+                            PrintToTextBox("创建BattlEye文件夹失败");
+                        }
                     }
                     //开始创建文件
+                    fileok = 1;
                     PrintToTextBox("开始创建文件：");
                     addfile("Uninstall.exe");
                     addfile("ConsistencyInfo");
@@ -128,21 +158,10 @@ namespace EFT_tool
                     addfile("WinPixEventRuntime.dll");
                     addfile("BattlEye\\BEClient_x64.dll");
                     addfile("EscapeFromTarkov.exe");
-                    fileok = 1;
-                    //PrintToTextBox("正在创建Uninstall.exe文件");
-                    /*
-                    string path1 = pathParameter + @"Uninstall.exe";
-                    string path2 = pathParameter + @"ConsistencyInfo";
-                    FileStream fs = File.Create(path1);
-                    fs.Close();
-                    if (File.Exists(path1))
+                    if (regok == 1 && fileok == 1 && folderok == 1)
                     {
-                        PrintToTextBox("创建Uninstall.exe成功");
-                    }*/
-                    if (regok == 1 && fileok == 1)
-                    {
-                        PrintToTextBox("正版验证已完成，Enjoy！");
-                        MessageBox.Show($"正版验证已完成！", "成功");
+                        PrintToTextBox("\n正版验证已完成，Enjoy！");
+                        MessageBox.Show($"正版验证已完成！", "成功" , MessageBoxButtons.OK,MessageBoxIcon.Information);
                     }
                     else
                     {

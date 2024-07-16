@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(delgenuine));
             this.delgenuinebutton = new AntdUI.Button();
             this.input1 = new AntdUI.Input();
             this.label1 = new AntdUI.Label();
@@ -79,9 +80,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.input1);
             this.Controls.Add(this.delgenuinebutton);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "delgenuine";
-            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "删除正版验证";
             this.ResumeLayout(false);
 

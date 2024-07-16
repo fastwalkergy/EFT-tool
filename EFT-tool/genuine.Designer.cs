@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(genuine));
             this.input1 = new AntdUI.Input();
             this.startdelgenuinebutton = new AntdUI.Button();
             this.SuspendLayout();
@@ -67,9 +68,11 @@
             this.Controls.Add(this.startdelgenuinebutton);
             this.Controls.Add(this.input1);
             this.ForeColor = System.Drawing.Color.White;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "genuine";
-            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "过正版验证";
             this.ResumeLayout(false);
 
