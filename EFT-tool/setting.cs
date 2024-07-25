@@ -19,7 +19,6 @@ namespace EFT_tool
         public setting()
         {
             InitializeComponent();
-            //string selectedFolderPathKey = keyName + @"\selectedFolderPath";
             // 创建或打开注册表项
             using (RegistryKey key = Registry.LocalMachine.CreateSubKey(keyName))
             {
@@ -59,7 +58,6 @@ namespace EFT_tool
                         // 创建或打开注册表项
                         using (RegistryKey key = Registry.LocalMachine.CreateSubKey(keyName))
                         {
-                            // 添加一个名为 "Version" 的字符串值
                             key.SetValue("selectedFolderPath", selectedFolderPath);
                         }
 

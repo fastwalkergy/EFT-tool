@@ -35,14 +35,9 @@ namespace EFT_tool
 
         private void PrintToTextBox(string text)
         {
-            if (input1.InvokeRequired)
-            {
-                input1.Invoke(new Action<string>(PrintToTextBox), text);
-            }
-            else
-            {
-                this.input1.AppendText(text + Environment.NewLine);
-            }
+           
+             this.input1.AppendText(text + Environment.NewLine);
+            
         }
 
         private async void delgenuinebutton_Click(object sender, EventArgs e)
@@ -52,11 +47,11 @@ namespace EFT_tool
                 // 另一个线程中执行
                 await Task.Run(() =>
                 {
-                    PrintToTextBox("开始删除注册表：");
                     using (RegistryKey key = Registry.LocalMachine.CreateSubKey(keyName))
                     {
                         if (key != null)
                         {
+                            PrintToTextBox("开始删除注册表：");
                             // 读取一个字符串值
                             if (key.GetValue("InstallLocation") as string != null)
                             {

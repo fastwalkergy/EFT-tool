@@ -41,17 +41,8 @@ namespace EFT_tool
 
         private void PrintToTextBox(string text)
         {
-            // 检查是否需要在主线程上执行更新
-            if (input1.InvokeRequired)
-            {
-                // 使用 Invoke 方法在主线程上执行更新
-                input1.Invoke(new Action<string>(PrintToTextBox), text);
-            }
-            else
-            {
-                // 在 TextBox 中追加新的文本
-                this.input1.AppendText(text + Environment.NewLine);
-            }
+             // 在 TextBox 中追加新的文本
+             input1.AppendText(text + Environment.NewLine);
         }
 
         private void addfile(string name)
@@ -68,6 +59,7 @@ namespace EFT_tool
                 fileok = 0;
                 input1.AppendText($"创建{name}失败" + Environment.NewLine);
             }
+            //或者使用return返回，在调用处使用if检测bool
         }
 
 
@@ -82,7 +74,6 @@ namespace EFT_tool
                     using (RegistryKey key = Registry.LocalMachine.CreateSubKey(keyName))
                     {
                         regok = 1;
-                        // 添加一个名为 "Version" 的字符串值
                         key.SetValue("InstallLocation", pathParameter);
                         key.SetValue("Launcher", pathParameter + @"\EscapeFromTarkov.exe");
                         key.SetValue("UninstallString", pathParameter + @"Uninstall.exe");
